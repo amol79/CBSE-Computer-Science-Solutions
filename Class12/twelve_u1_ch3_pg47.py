@@ -5,9 +5,11 @@ class Mobile:
   def __init__(self, price, model = None):
     self.price=price
     self.model=model
+    #Mobile.model = model #will also give same result
   
   def displaydata(self, ):
     print("Details of Mobile are: ", self. price, self. model)
+    #print("Details of Mobile are: ", self. price, Mobile. model) #will give same result
 
 M1 = Mobile(10000, "Redmi Note 3")
 M1.displaydata()
